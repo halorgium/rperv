@@ -1,5 +1,3 @@
-app = lambda {|env|
-  [200, {"Content-Type" => "text/plain"}, [Time.now.to_s, "\n"]]
-}
+require File.dirname(__FILE__) + '/lib/app'
 
-run app
+run App

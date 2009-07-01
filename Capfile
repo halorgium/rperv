@@ -1,7 +1,7 @@
 load 'deploy'
 
-set :application, "simple-rack"
-set :repository,  "git@github.com:halorgium/simple-rack.git"
+set :application, "rperv"
+set :repository,  "git@github.com:halorgium/rperv.git"
 
 set :deploy_to, "/var/www/#{application}"
 
