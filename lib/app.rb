@@ -6,6 +6,9 @@ require 'statistics'
 
 class App < Sinatra::Base
   get '/' do
-    "load average: #{Statistics.load_average.join(" ")}"
+    <<-EOT
+load average: #{Statistics.load_average.join(" ")}
+uptime: #{Statistics.uptime}
+      EOT
   end
 end
