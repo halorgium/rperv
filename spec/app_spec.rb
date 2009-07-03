@@ -16,4 +16,10 @@ describe App do
       response.body.should =~ /uptime: /
     end
   end
+
+  it 'shows the memory statistics' do
+    get "/" do |response|
+      response.should have_selector("div#memory-statistics")
+    end
+  end
 end
