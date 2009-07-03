@@ -10,4 +10,10 @@ describe App do
       response.body.should =~ /load average: /
     end
   end
+
+  it 'shows the uptime' do
+    get "/" do |response|
+      response.body.should =~ /uptime: /
+    end
+  end
 end
