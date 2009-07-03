@@ -3,6 +3,7 @@ require 'sinatra'
 $:.unshift(File.dirname(__FILE__))
 
 require 'statistics'
+require 'memory_analyser'
 
 class App < Sinatra::Base
   get '/' do
